@@ -20,4 +20,14 @@ export class AppComponent {
     }
       
   }
+
+  // event listener in bullon tag.
+  onCheckout(event: any){
+    console.log("checkout successfully", event.target);
+  }
+
+  // event listener in h2 tag
+  titleHover(message: string){
+    console.log(message + " the title");
+  }
 }

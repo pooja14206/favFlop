@@ -1,5 +1,6 @@
-<h1>{{name}} 's favorite flop is....</h1>
-
+<div class="jumbotron bg-dark text-light">
+<h1 (mouseover) = "titleHover('hovered')">{{name}} 's favorite flop is....</h1>
+<hr class="my-4">
 <dl class="row">
 
   <dt class="col-sm-3">Title</dt>
@@ -17,4 +18,8 @@
   <dt class="col-sm-3">Soundtrack link</dt>
   <dd class="col-sm-9"><a [href]="favFlop.soundTrack?.spotifyLink">Spotify</a></dd>
 
+  <button 
+  (click) = "onCheckout($event)"
+  class="btn btn-primary" >Check Out</button>
 </dl>
+</div>
