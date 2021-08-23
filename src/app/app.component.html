@@ -7,11 +7,11 @@
   <dd class="col-sm-9">{{favFlop.title}}</dd>
 
   <dt class="col-sm-3">Year Released</dt>
-  <dd class="col-sm-9" (click) = "yearClicked()">
+  <dd class="col-sm-9" (click) = "dataClicked($event)">
     {{favFlop.relesedYear}}</dd>
 
   <dt class="col-sm-3">Rating</dt>
-  <dd class="col-sm-9" (click) = "ratingClicked()">
+  <dd class="col-sm-9" (click) = "dataClicked($event)">
     {{favFlop.rating}}</dd>
 
   <dt class="col-sm-3">Imdb link</dt>
@@ -19,9 +19,9 @@
 
   <dt class="col-sm-3">Soundtrack link</dt>
   <dd class="col-sm-9"><a [href]="favFlop.soundTrack?.spotifyLink">Spotify</a></dd>
-
+</dl>
   <button 
   (click) = "onCheckout($event)"
   class="btn btn-primary" >Check Out</button>
-</dl>
+
 </div>

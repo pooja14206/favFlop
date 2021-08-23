@@ -9,7 +9,6 @@ export class AppComponent {
   // title = 'safe-navigation-operator';
 
   name: string = "Pooja";
-
   favFlop = {
     title: "3-idiots",
     relesedYear: 2009,
@@ -18,12 +17,11 @@ export class AppComponent {
     soundTrack: {
       spotifyLink: ""
     }
-      
   }
 
   // event listener in bullon tag.
   onCheckout(event: any){
-    console.log("checkout successfully", event.target);
+    console.log("checkout successfully", event.target.innerHTML);
   }
 
   // event listener in h2 tag
@@ -31,14 +29,8 @@ export class AppComponent {
     console.log(message + " the title");
   }
 
-  //event listener in relesedYear 
-  yearClicked() {
-    console.log("year clicked");
-
-  }
-
-  //event listener in rating
-  ratingClicked() {
-    console.log("rating clicked");
+  //event listener in data click 
+  dataClicked(event: any) {
+    console.log("data clicked" + event.target.innerHTML);
   }
 }
