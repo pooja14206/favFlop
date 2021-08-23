@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'safe-navigation-operator';
+  // title = 'safe-navigation-operator';
+
+  name: string = "Pooja";
+
+  favFlop = {
+    title: "3-idiots",
+    relesedYear: 2009,
+    rating: "5stars",
+    imdbLink: 'www.viva.com',
+    soundTrack: {
+      spotifyLink: ""
+    }
+      
+  }
 }
