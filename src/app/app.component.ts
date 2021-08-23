@@ -30,4 +30,15 @@ export class AppComponent {
   titleHover(message: string){
     console.log(message + " the title");
   }
+
+  //event listener in relesedYear 
+  yearClicked() {
+    console.log("year clicked");
+
+  }
+
+  //event listener in rating
+  ratingClicked() {
+    console.log("rating clicked");
+  }
 }
